@@ -30,3 +30,13 @@ smokers = load_list_data('insurance.csv', 'smoker')
 patient_region = load_list_data('insurance.csv', 'region')
 patient_insurance_charges = load_list_data('insurance.csv', 'charges')
 
+# this function loops through the array and adds each unique region 
+# into a new array, as long as it is not already in the array
+
+def different_regions(l):
+    unique_regions = []
+
+    for region in patient_region:
+        if region not in unique_regions:
+            unique_regions.append(region)
+    return unique_regions

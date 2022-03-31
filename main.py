@@ -44,7 +44,8 @@ def sum_of_list(l):
 def number_of_occurences(l):
     count = 0 
     for value in l:
-        if value == property
+
+        if value == property:
             count += 1
     return count
 
@@ -64,5 +65,6 @@ def different_regions(l):
 
 #This is for the average age of the people insured in the dataset
 average_age = round(sum_of_list(ages) / len(ages))
+males_in_dataset = number_of_occurences(sexes, 'male')
 
 

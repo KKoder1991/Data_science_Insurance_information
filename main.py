@@ -59,3 +59,10 @@ def different_regions(l):
             unique_regions.append(region)
     return unique_regions
 
+#This section containts the information that was needed to be extracted
+# from the given data. Each answer is saved to a variable
+
+#This is for the average age of the people insured in the dataset
+average_age = round(sum_of_list(ages) / len(ages))
+
+

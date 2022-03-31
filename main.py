@@ -18,3 +18,15 @@ def load_list_data(csv_file, column_name):
                 print(f"row: {row}")
             
         return lst
+
+# takes the function load_list_data and loads each column into 
+# an empty variable
+
+ages = load_list_data('insurance.csv', 'age')
+sexes = load_list_data('insurance.csv', 'sex')
+bmis = load_list_data('insurance.csv', 'bmi')
+children = load_list_data('insurance.csv', 'children')
+smokers = load_list_data('insurance.csv', 'smoker')
+patient_region = load_list_data('insurance.csv', 'region')
+patient_insurance_charges = load_list_data('insurance.csv', 'charges')
+

@@ -30,6 +30,14 @@ smokers = load_list_data('insurance.csv', 'smoker')
 patient_region = load_list_data('insurance.csv', 'region')
 patient_insurance_charges = load_list_data('insurance.csv', 'charges')
 
+
+# this function calculates the average age of the users in the data set
+def sum_of_list(l):
+    total = 0
+    for val in l:
+        total = total + int(val)
+    return total
+
 # this function loops through the array and adds each unique region 
 # into a new array, as long as it is not already in the array
 
@@ -40,3 +48,4 @@ def different_regions(l):
         if region not in unique_regions:
             unique_regions.append(region)
     return unique_regions
+

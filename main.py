@@ -38,6 +38,16 @@ def sum_of_list(l):
         total = total + int(val)
     return total
 
+# this function is to see how many males or how many females are in 
+# the dataset given
+
+def number_of_occurences(l):
+    count = 0 
+    for value in l:
+        if value == property
+            count += 1
+    return count
+
 # this function loops through the array and adds each unique region 
 # into a new array, as long as it is not already in the array
 

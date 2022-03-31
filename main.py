@@ -41,7 +41,7 @@ def sum_of_list(l):
 # this function is to see how many males or how many females are in 
 # the dataset given
 
-def number_of_occurences(l):
+def number_of_occurences(l, property):
     count = 0 
     for value in l:
 
@@ -65,6 +65,13 @@ def different_regions(l):
 
 #This is for the average age of the people insured in the dataset
 average_age = round(sum_of_list(ages) / len(ages))
+print(average_age)
+#This is for the amount of males inside the dataset
 males_in_dataset = number_of_occurences(sexes, 'male')
+print(males_in_dataset)
+#Total number of people insured
+total_number_of_insured = len(ages)
+number_of_smokers = count_number_occurences(smokers, "yes")
+unique_regions = different_regions(patient_regions)
 
 
